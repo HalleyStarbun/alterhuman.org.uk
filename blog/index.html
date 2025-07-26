@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>alterhuman.org.uk</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: "Courier New", monospace;
+      background: linear-gradient(to top, #0b0c1f, #000000);
+      position: relative;
+      overflow: auto;
+      color: #c0c0d0;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(1px 1px at 20% 30%, #fff 0%, transparent 100%),
+        radial-gradient(1px 1px at 50% 10%, #fff 0%, transparent 100%),
+        radial-gradient(1px 1px at 80% 60%, #fff 0%, transparent 100%),
+        radial-gradient(2px 2px at 70% 80%, #fff 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 70%, #fff 0%, transparent 100%);
+      background-repeat: repeat;
+      animation: twinkle 3s infinite alternate;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes twinkle {
+      from {
+        opacity: 0.4;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    a {
+      color: #8ab4f8;
+      text-decoration: underline;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(20, 20, 40, 0.8);
+      border: 2px dashed #5a5aff;
+      position: relative;
+      z-index: 1;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px dotted #444470;
+      position: relative;
+      z-index: 1;
+    }
+
+    .flag-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: -10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .top-menu {
+      display: flex;
+      justify-content: center;
+      background: rgba(30, 30, 60, 0.8);
+      padding: 12px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      gap: 40px;
+      margin: 20px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .top-menu ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 32px;
+    }
+
+    .top-menu li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-menu a {
+      color: #8ab4f8;
+      text-decoration: none;
+      font-family: "Courier New", monospace;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .top-menu a:hover {
+      background: rgba(138, 180, 248, 0.2);
+      transform: translateY(-2px);
+      color: #ffffff;
+    }
+
+    .flag-banner img {
+      width: 60px;
+      height: auto;
+      border: 2px solid #c0c0d0;
+    }
+
+    .flag-banner h1 {
+      margin: 0;
+      color: #e0e0ff;
+    }
+
+    section {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="flag-banner">
+      <img src="/img/pride.jpg" alt="Pride Flag">
+      <h1>alterhuman.org.uk</h1>
+      <img src="/img/alterhuman.jpg" alt="Alterhuman Unity Flag">
+    </div>
+
+    <nav class="top-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/chat">Chat</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <ul>
+        <li>2025/07/26 - Halley Starbun - <a href="/blog/20250726_halleystarbun_introduction">Introduction</a></li>
+    </ul>
+
+    <hr>
+    <center><img src="/img/fireplace.gif" alt="Animated Fireplace GIF"></center>
+    <hr>
+
+    <p><em>Last updated: 26th July 2025 (Earth time)</em></p>
+    <p align="center"><a href="#">[Back to Top]</a></p>
+  </div>
+</body>
+
+</html>
