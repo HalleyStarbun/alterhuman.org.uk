@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>alterhuman.org.uk :)</title>
+  <title>alterhuman.org.uk</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -10,18 +11,16 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <style>
-    /* Night sky gradient and starfield */
     body {
       margin: 0;
       padding: 10px;
       font-family: "Courier New", monospace;
       background: linear-gradient(to top, #0b0c1f, #000000);
       position: relative;
-      /* allow scrolling */
       overflow: auto;
       color: #c0c0d0;
     }
-    /* Twinkling stars layer */
+
     body::before {
       content: "";
       position: absolute;
@@ -40,31 +39,41 @@
       pointer-events: none;
       z-index: 0;
     }
+
     @keyframes twinkle {
-      from { opacity: 0.4; }
-      to { opacity: 1; }
+      from {
+        opacity: 0.4;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
+
     a {
       color: #8ab4f8;
       text-decoration: underline;
       position: relative;
       z-index: 1;
     }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      background-color: rgba(20,20,40,0.8);
+      background-color: rgba(20, 20, 40, 0.8);
       border: 2px dashed #5a5aff;
       position: relative;
       z-index: 1;
     }
+
     hr {
       border: none;
       border-top: 2px dotted #444470;
       position: relative;
       z-index: 1;
     }
+
     .flag-banner {
       display: flex;
       align-items: center;
@@ -74,21 +83,69 @@
       position: relative;
       z-index: 1;
     }
+
+    .top-menu {
+      display: flex;
+      justify-content: center;
+      background: rgba(30, 30, 60, 0.8);
+      padding: 12px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      gap: 40px;
+      margin: 20px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .top-menu ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 32px;
+    }
+
+    .top-menu li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-menu a {
+      color: #8ab4f8;
+      text-decoration: none;
+      font-family: "Courier New", monospace;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .top-menu a:hover {
+      background: rgba(138, 180, 248, 0.2);
+      transform: translateY(-2px);
+      color: #ffffff;
+    }
+
     .flag-banner img {
       width: 60px;
       height: auto;
       border: 2px solid #c0c0d0;
     }
+
     .flag-banner h1 {
       margin: 0;
       color: #e0e0ff;
     }
+
     section {
       position: relative;
       z-index: 1;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
 
@@ -98,7 +155,21 @@
       <img src="alterhuman.jpg" alt="Alterhuman Unity Flag">
     </div>
 
-    <p>Welcome. Make yourself at home. Put your paws/tail up and relax a little. This is a safe little space for critters and creatures from all around the world. Lay under a fan or your favourite heat lamp, and enjoy.</p>
+    <nav class="top-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <p>Welcome. Make yourself at home. Put your paws/tail up and relax a little. This is a safe little space for
+      critters and creatures from all around the world. Lay under a fan or your favourite heat lamp, and enjoy.</p>
 
     <hr>
 
@@ -106,7 +177,8 @@
       <h2>About Us</h2>
       <p>We are a collection of at least two (possibly more!) creatures.</p>
       <ul>
-        <li>Halley: Rabbit (She/It) — The one in our system who usually fronts. Is very excited about space. Usually found stargazing in a dark forest at night.</li>
+        <li>Halley: Rabbit (She/It) — The one in our system who usually fronts. Is very excited about space. Usually
+          found stargazing in a dark forest at night.</li>
         <li>Alexandria: Dragon (She/Her) — Caretaker. Dragoness who soars through the heavens. Casual ABBA enjoyer.</li>
       </ul>
     </section>
@@ -115,7 +187,7 @@
       <h2>Services</h2>
       <p>idk we might do a minecraft server or something</p>
     </section>
-    
+
     <section>
       <h2>Resources</h2>
       <ul>
@@ -140,11 +212,12 @@
     </section>
 
     <hr>
-      <center><img src="fireplace.gif" alt="Animated Fireplace GIF"></center>
+    <center><img src="fireplace.gif" alt="Animated Fireplace GIF"></center>
     <hr>
 
     <p><em>Last updated: 26th July 2025 (Earth time)</em></p>
     <p align="center"><a href="#">[Back to Top]</a></p>
   </div>
 </body>
+
 </html>
