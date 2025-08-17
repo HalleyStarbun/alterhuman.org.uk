@@ -1,0 +1,18 @@
+<nav class="top-menu">
+  {% assign here = page.url %}
+  <ul>
+    {% assign link = "/" %}
+    <li><a href="/" class="{% if here == link %}active{% endif %}">Home</a></li>
+    {% assign link = "/blog/" %}
+    <li><a href="/blog/" class="{% if here == link or here contains link %}active{% endif %}">Blog</a></li>
+    {% assign link = "/resources/" %}
+    <li><a href="/resources/" class="{% if here == link or here contains link %}active{% endif %}">Resources</a></li>
+    {% assign link = "/services/" %}
+    <li><a href="/services/" class="{% if here == link or here contains link %}active{% endif %}">Services</a></li>
+    {% assign link = "/chat/" %}
+    <li><a href="/chat/" class="{% if here == link or here contains link %}active{% endif %}">Chat</a></li>
+    {% assign link = "/about/" %}
+    <li><a href="/about/" class="{% if here == link or here contains link %}active{% endif %}">About</a></li>
+  </ul>
+  
+</nav>

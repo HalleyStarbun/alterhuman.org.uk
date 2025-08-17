@@ -1,0 +1,42 @@
+title: alterhuman.org.uk
+description: UK alterhuman/therian/otherkin resources and community
+url: "https://alterhuman.org.uk/"
+baseurl: ""
+timezone: Europe/London
+
+# Collections
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name/
+
+# Markdown and permalinks
+markdown: kramdown
+permalink: pretty
+
+# Plugins (GitHub Pages-compatible)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - partials
+  - node_modules
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: post
